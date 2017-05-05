@@ -40,7 +40,7 @@ window.onload=function() {
     // Body
     "Email: " + email + "\n Message: " + message, 
     // Credentials
-    {token: "13dc364f-8b66-40c6-bae1-9fd3a0f093dc"});
+    {token: "b076d1ac-f042-4a95-8d46-1fda9d2f87d5"});
     
     // Should be triggered on form submit
     alert('hi');
