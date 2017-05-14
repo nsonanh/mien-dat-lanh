@@ -378,7 +378,7 @@
         }
 
         if (settings.pagination === true) {
-            $(".onepage-pagination li a").click(function (e) {
+            $(".onepage-pagination li a, #scrollButton").click(function (e) {
                 e.preventDefault();
                 var page_index = $(this).data("index");
                 el.moveTo(page_index);
