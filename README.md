@@ -1,6 +1,6 @@
 # mien-dat-lanh
 
-- Mail api: http://blog.mashape.com/list-of-10-email-apis/
+- SmtpJs : https://smtpjs.com/
 
 - Bootstrap screen: https://bootstrapious.com/p/screen-onepage-scroll-theme
 
