@@ -242,10 +242,12 @@
                 $("body").addClass("disabled-onepage-scroll");
                 $(document).unbind('mousewheel DOMMouseScroll MozMousePixelScroll');
                 el.swipeEvents().unbind("swipeDown swipeUp");
+                $("#scrollButtonHost").css( "visibility", "hidden" );
             } else {
                 if ($("body").hasClass("disabled-onepage-scroll")) {
                     $("body").removeClass("disabled-onepage-scroll");
                     $("html, body, .wrapper").animate({scrollTop: 0}, "fast");
+                    $("#scrollButtonHost").css( "visibility", "visible" );
                 }
 
 
@@ -384,7 +386,6 @@
                 el.moveTo(page_index);
             });
         }
-
 
         $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
             event.preventDefault();
