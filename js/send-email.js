@@ -29,26 +29,18 @@ window.onload=function() {
 }
 
 function showToastr(message, success) {
-    toastr.options = {
-      "closeButton": false,
-      "debug": false,
-      "newestOnTop": false,
-      "progressBar": false,
-      "positionClass": "toast-top-right",
-      "preventDuplicates": false,
-      "onclick": null,
-      "showDuration": "300",
-      "hideDuration": "1000",
-      "timeOut": "5000",
-      "extendedTimeOut": "1000",
-      "showEasing": "swing",
-      "hideEasing": "linear",
-      "showMethod": "fadeIn",
-      "hideMethod": "fadeOut"
-    }
-    if (success) {
-      toastr["success"](message);
-    } else {
-      toastr["error"](message);
-    }
+  alertify.logPosition("bottom right");
+  if (success) {
+    var msg = "<img src='http://3.bp.blogspot.com/-qUH2sD4GWB0/UUn5xBphLjI/AAAAAAAAA2o/MMYWv7n8sNw/s1600/thumb-up-terminator+pablo+M+R.jpg'>" +
+        "<h3>Success</h3>" +
+        "<p>" + message + "</p>";
+
+    alertify.success(msg);
+  } else {
+      var msg = "<img src='http://i.imgur.com/b4yyOHw.jpg'>" +
+      "<h3>Failure</h3>" +
+      "<p>" + message + "</p>";
+
+    alertify.error(msg);
+  }
 }
