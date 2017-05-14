@@ -1,31 +1,3 @@
-// function processForm(e) {
-//     if (e.preventDefault) e.preventDefault();
-
-//     /* do what you want with the form */
-//     var name = document.getElementById('name');
-//     var surname = document.getElementById('surname');
-//     var email = document.getElementById('email');
-//     var message = document.getElementById('message');
-
-//     Email.send("lubabyyy@gmail.com", "anhsonandynguyen@gmail.com",
-//     // Subject
-//     "Message from: " + name + " " + surname, 
-//     // Body
-//     "Email: " + email + "\n Message: " + message, 
-//     // Credentials
-//     {token: "2e6493e8-61bc-408e-8d35-ad8cda87dc14"});
-
-//     // You must return false to prevent the default form behavior
-//     return false;
-// }
-
-// var form = document.getElementById('contact-form');
-// if (form.attachEvent) {
-//     form.attachEvent("submit", processForm);
-// } else {
-//     form.addEventListener("submit", processForm);
-// }
-
 window.onload=function() {
     document.getElementById('contact-form').onsubmit=function() {
     /* do what you want with the form */
@@ -44,7 +16,39 @@ window.onload=function() {
     
     // Should be triggered on form submit
     alert('hi');
+
+    // Clear form
+    document.getElementById('contact-form').reset();
+
+    // toastr
+    showToastr("Email sent.", true);
+
     // You must return false to prevent the default form behavior
     return false;
   }
+}
+
+function showToastr(message, success) {
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-top-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+    if (success) {
+      toastr["success"](message);
+    } else {
+      toastr["error"](message);
+    }
 }
