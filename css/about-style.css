@@ -1,5 +1,6 @@
 .logoDiv
 {
+    width: 100%;
     display: -webkit-flex;
     display: flex;
     align-items: center;
