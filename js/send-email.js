@@ -21,7 +21,7 @@ window.onload=function() {
     document.getElementById('contact-form').reset();
 
     // toastr
-    showToastr("Email sent.", true);
+    showToastr("Chúng tôi sẽ trả lời bạn sớm nhất có thể.", true);
 
     // You must return false to prevent the default form behavior
     return false;
@@ -31,9 +31,8 @@ window.onload=function() {
 function showToastr(message, success) {
   alertify.logPosition("bottom right");
   if (success) {
-    var msg = "<img src='http://3.bp.blogspot.com/-qUH2sD4GWB0/UUn5xBphLjI/AAAAAAAAA2o/MMYWv7n8sNw/s1600/thumb-up-terminator+pablo+M+R.jpg'>" +
-        "<h3>Success</h3>" +
-        "<p>" + message + "</p>";
+    var msg = "<h5>Cám ơn bạn, thông tin đã được gửi.</h5>" +
+        "<h6>" + message + "</h6>";
 
     alertify.success(msg);
   } else {
