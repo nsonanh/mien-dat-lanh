@@ -575,8 +575,9 @@
 
     <script>
       $(document).ready(function() {
-      $('#fullpage').fullpage();
-      });
+        $('#fullpage').fullpage();
+        $.fn.fullpage.setMouseWheelScrolling(false);
+    });
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
