@@ -1,1 +1,20 @@
 /* your styles go here */
+.fp-next {
+    border-color: transparent transparent transparent black !important;
+    right: 20px !important;
+    opacity: 0.7 !important;
+}
+
+.fp-prev {
+    border-color: transparent black transparent transparent !important;
+    left: 20px !important;
+    opacity: 0.7 !important;
+}
+
+.content {
+    overflow: visible !important;
+}
+
+.fp-completely {
+    height: 100% !important;
+}
