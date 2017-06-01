@@ -59,6 +59,6 @@
 }
 
 .row {
-  margin-bottom: 15px;
-  align-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
