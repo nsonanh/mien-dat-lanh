@@ -1,9 +1,9 @@
-.box1, .box2, .box3 {
+.box1, .box2, .box3, .box4 {
   position: relative;
   height: 100%;
 }
 
-.overlay1, .overlay2, .overlay3  {
+.overlay1, .overlay2, .overlay3, .overlay4  {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -18,13 +18,14 @@
 
 .box1:hover .overlay1,
 .box2:hover .overlay2,
-.box3:hover .overlay3
+.box3:hover .overlay3,
+.box4:hover .overlay4
 {
   opacity: 0.8;
   background-color: #252525;
 }
 
-.text1, .text2, .text3
+.text1, .text2, .text3, .text4
 {
   color: white;
   font-size: 1em;
@@ -55,4 +56,9 @@
 
 .b {
     font-weight:bold;
+}
+
+.row {
+  margin-bottom: 15px;
+  align-content: center;
 }
