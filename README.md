@@ -6,6 +6,6 @@
 
 - AlertifyJs: http://alertifyjs.com/
 
-- FancyBox: http://fancybox.net/
+- FullpageJs: https://github.com/alvarotrigo/fullPage.js
 
 - Google map api: https://developers.google.com/maps/documentation/javascript/get-api-key
