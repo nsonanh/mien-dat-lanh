@@ -8,4 +8,6 @@
 
 - FullpageJs: https://github.com/alvarotrigo/fullPage.js
 
+- LightGalleryJs: http://sachinchoolur.github.io/lightGallery/
+
 - Google map api: https://developers.google.com/maps/documentation/javascript/get-api-key
