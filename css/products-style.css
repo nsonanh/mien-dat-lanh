@@ -1,9 +1,9 @@
-.box1, .box2, .box3, .box4 {
+.box1, .box2, .box3, .box4, .box5 {
   position: relative;
   height: 100%;
 }
 
-.overlay1, .overlay2, .overlay3, .overlay4  {
+.overlay1, .overlay2, .overlay3, .overlay4, .overlay5  {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -19,13 +19,14 @@
 .box1:hover .overlay1,
 .box2:hover .overlay2,
 .box3:hover .overlay3,
-.box4:hover .overlay4
+.box4:hover .overlay4,
+.box5:hover .overlay5
 {
   opacity: 0.8;
   background-color: #252525;
 }
 
-.text1, .text2, .text3, .text4
+.text1, .text2, .text3, .text4, .text5
 {
   color: white;
   font-size: 1em;
