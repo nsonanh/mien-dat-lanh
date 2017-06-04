@@ -57,6 +57,9 @@
               </div>
             </div>
           </div>
+          <div class="sound-icon">
+            <button class="unmute-icon"  id="sound-icon-button"></button>
+          </div>
           <div class="icon faa-float animated" id="scrollButtonHost">
             <a data-index="2" href="#2" id="scrollButton">
               <i class="fa fa-angle-double-down"></i>
@@ -311,7 +314,7 @@
                         </div>
                       </div>
                     </div>
-                  <p class="text-center">Đặt hàng trực tiếp trên trang <a data-index="7" href="#7" id="scrollButton">web</a> hoặc mua sản phẩm tại địa chỉ : <b>14/24 Trần Mai Ninh, Phường 12, Quận Tân Bình, TP.HCM</b> ( liên hệ trước khi đến ). Gọi điện tới số điện thoại <b>0906459386</b> để được tư vấn.</p>
+                  <p class="text-center">Đặt hàng trực tiếp trên trang <a data-index="5" href="#5" id="scrollButton">web</a> hoặc mua sản phẩm tại địa chỉ : <b>14/24 Trần Mai Ninh, Phường 12, Quận Tân Bình, TP.HCM</b> ( liên hệ trước khi đến ). Gọi điện tới số điện thoại <b>0906459386</b> để được tư vấn.</p>
                   <!-- <div class="row">
                     <div class="col-sm-4">
                       <div class="box"><a href="#" title=""><img src="img/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
@@ -497,15 +500,14 @@
                         </div>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
-
-          </div>
             </div>
           </div>
         </section>
         <!-- Page 5 -->
-        <section id="page4" class="section-gray">
+        <!--<section id="page4" class="section-gray">
           <div class="content">
             <div class="container clearfix">
               <div class="row services">
@@ -561,7 +563,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section>-->
         <!-- page 6 -->
         <!--<section id="page6">
           <div class="content">
@@ -584,8 +586,8 @@
             </div>
           </div>
         </section>-->
-        <!-- page 6-->
-        <section id="page6">
+        <!-- page 5-->
+        <section id="page5" class="section-gray">
           <div class="content">
             <div class="container clearfix">
               <div class="row">
@@ -598,20 +600,20 @@
                           <div class="row">
                             <div class="col-sm-6">
                               <div class="form-group">
-                                <label for="name">Tên *</label>
-                                <input type="text" id="name" name="name" placeholder="Vui lòng xác nhận tên" required="required" class="form-control">
+                                <label for="surname">Họ *</label>
+                                <input type="text" id="surname" name="surname" placeholder="vd: Nguyễn" required="required" class="form-control">
                               </div>
                             </div>
                             <div class="col-sm-6">
                               <div class="form-group">
-                                <label for="surname">Họ *</label>
-                                <input type="text" id="surname" name="surname" placeholder="Vui lòng xác nhận họ" required="required" class="form-control">
+                                <label for="name">Tên *</label>
+                                <input type="text" id="name" name="name" placeholder="vd: Văn A" required="required" class="form-control">
                               </div>
                             </div>
                           </div>
                           <div class="form-group">
                             <label for="surname">Địa chỉ email *</label>
-                            <input type="email" id="email" name="email" placeholder="Địa chỉ email của bạn" required="required" class="form-control">
+                            <input type="email" id="email" name="email" placeholder="vd: example@example.com" required="required" class="form-control">
                           </div>
                           <div class="form-group">
                             <label for="surname">Nội dung *</label>
@@ -669,6 +671,18 @@
       $(document).ready(function() {
         $('#fullpage').fullpage();
         $.fn.fullpage.setMouseWheelScrolling(false);
+
+        $('#sound-icon-button').click(function(){
+          if ($("#sound-icon-button").hasClass("unmute-icon")) {
+            $('#sound-icon-button').addClass("mute-icon");
+            $('#sound-icon-button').removeClass("unmute-icon");
+            $('#bgvid').prop('muted', true);
+          } else {
+            $('#sound-icon-button').removeClass("mute-icon");
+            $('#sound-icon-button').addClass("unmute-icon");
+            $('#bgvid').prop('muted', false);
+          }
+        });
     });
     </script>
 
