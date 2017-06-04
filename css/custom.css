@@ -33,3 +33,32 @@ video {
   	background-size: cover;
   	transition: 1s opacity;
 }
+
+.mute-icon, .unmute-icon {
+    width: 24px;
+    height: 24px;
+    border: none;
+}
+
+.mute-icon {
+    background: url('../img/icons/mute.png') center center no-repeat;
+}
+
+.unmute-icon {
+    background: url('../img/icons/unmute.png') center center no-repeat;
+}
+
+.mute-icon:focus,
+.unmute-icon:focus {
+    outline: none;
+}
+
+.sound-icon {
+    width: 24px;
+    height: 24px;
+
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 3;
+}
