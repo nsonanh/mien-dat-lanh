@@ -15,9 +15,6 @@ window.onload=function() {
     {token: "b076d1ac-f042-4a95-8d46-1fda9d2f87d5"});
     
     // Should be triggered on form submit
-    alert('hi');
-
-    // Clear form
     document.getElementById('contact-form').reset();
 
     // toastr
