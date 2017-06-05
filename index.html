@@ -33,6 +33,10 @@
     <link rel="stylesheet" type="text/css" href="css/products-style.css">
     <!-- fullpage.js -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Morphext -->
+    <link rel="stylesheet" href="css/morphext.css">
   </head>
   <body>
     <div class="wrapper">
@@ -76,7 +80,7 @@
                     <img src="img/about2.jpg" alt="logo" align="middle">
                   </div>
                   <h2 class="heading">Về chúng tôi</h2>
-                  <p class="lead">Sữa, mật ong chúa Miền Đất Lạnh</p>
+                  <p class="lead"><span id="js-rotating">Sữa Ong Chúa, Mật Ong Cafe, Phấn Hoa Cafe, Tinh Nghệ Viên</span> Miền Đất Lạnh</p>
                   <p>Sữa ong chúa Miền Đất Lạnh chuyên cung cấp sữa ong chúa tươi và mật ong hoa cafe nguyên chất 100%. Sản xuất tại trại ong Lâm Đồng -Đà Lạt. </p>
                   <p>Sữa ong chúa Miền Đất Lạnh cam kết sản phẩm nguyên chất từ trại ong Lâm Đồng. Hoàn trả 100% số tiền mua của bạn nếu sản phẩm không nguyên chất. </p>
                   <p>Sữa ong chúa tươi nguyên chất Miền Đất Lạnh có quy cách đóng gói hũ thủy tinh KLT 100gr có thành phần 100% sữa ong chúa nguyên chất chưa pha chế.</p>
@@ -666,6 +670,7 @@
     <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
     <script src="js/send-email.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+    <script src="js/morphext.min.js"></script>
 
     <script>
       $(document).ready(function() {
@@ -684,6 +689,17 @@
           }
         });
     });
+	$('#js-rotating').Morphext({
+		// The [in] animation type. Refer to Animate.css for a list of available animations.
+		animation: "fadeIn",
+		// An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+		separator: ",",
+		// The delay between the changing of each phrase in milliseconds.
+		speed: 5000,
+		complete: function () {
+		    // Called after the entrance animation is executed.
+		}
+	});
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
