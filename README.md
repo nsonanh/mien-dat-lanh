@@ -8,6 +8,10 @@
 
 - FullpageJs: https://github.com/alvarotrigo/fullPage.js
 
+- Animate CSS: https://daneden.github.io/animate.css/
+
+- MorphextJs: http://morphext.fyianlai.com/
+
 - LightGalleryJs: http://sachinchoolur.github.io/lightGallery/
 
 - Google map api: https://developers.google.com/maps/documentation/javascript/get-api-key
