@@ -6,7 +6,7 @@ window.onload=function() {
     var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
 
-    Email.send("lubabyyy@gmail.com", "anhsonandynguyen@gmail.com",
+    Email.send("lubabyyy@gmail.com", "suaongchuamiendatlanh@gmail.com",
     // Subject
     "Message from: " + name + " " + surname, 
     // Body
