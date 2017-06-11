@@ -68,7 +68,8 @@ video {
 iframe {
     display: block;       /* iframes are inline by default */
     background: #000;
-    border: none;         /* Reset default border */
+    border: 5px solid #eaeaea;  /* Reset default border */
+    outline: 1px solid #bfbfbf;
     height: 80vh;        /* Viewport-relative units */
-    /*width: 100vw;*/
+    
 }
